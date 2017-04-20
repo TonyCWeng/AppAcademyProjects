@@ -11,6 +11,8 @@
     <% if current_user %>
       <h2> <%= current_user.email %> </h2>
       <%= button_to "Logout", sessions_url, method: :delete %>
+    <% else %>
+      <%= link_to "Login", new_sessions_url %>
     <% end %>
   </header>
   <body>
