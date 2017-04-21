@@ -7,7 +7,12 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
-
+  <% if logged_in? %>
+    <%= button_to "Log out", sessions_url, method: "delete" %>
+  <% else %>
+    <%= button_to "Sign Up", new_user_url, method: "get" %>
+    <%= button_to "Log In", new_sessions_url, method: "get" %>
+  <% end %>
   <body>
     <%= yield %>
   </body>
