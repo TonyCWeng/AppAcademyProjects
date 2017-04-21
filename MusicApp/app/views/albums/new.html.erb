@@ -14,6 +14,7 @@
   <br>
 
   <label for="band_id">Select Band</label>
+  <option disabled selected="">Select a Band</option>
   <select id="band_id" name="album[band_id]">
     <% Band.all.each do |band| %>
     <option value="<%=band.id%>"><%= band.name %></option>

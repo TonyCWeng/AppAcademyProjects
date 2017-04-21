@@ -1,5 +1,5 @@
 class Track < ApplicationRecord
-  validates :song, :album_id, :lyrics, :track_bonus, presence: true
+  validates :song, :album_id, :lyrics, presence: true
 
   belongs_to :album
 
