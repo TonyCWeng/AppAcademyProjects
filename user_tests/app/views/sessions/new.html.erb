@@ -1,2 +1,12 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+<h2>Log In!</h2>
+
+<form action="<%= sessions_url %>" method="post">
+  <%= auth_token %>
+  <label for="email">Email: </label>
+    <input id="email" type="text" name="user[email]" placeholder="email">
+
+    <label for="password">Password: </label>
+    <input id="password" type="password" name="user[password]" placeholder="password">
+
+    <input id="submit" type="submit">
+</form>
