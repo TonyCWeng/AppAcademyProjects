@@ -101,7 +101,7 @@ Function.prototype.curry = function (numArgs) {
     if (numbers.length === numArgs) {
       console.log(numbers);
       console.log(funct);
-      return funct;
+      return funct(numbers);
     } else {
       return _curry;
     }
@@ -120,12 +120,12 @@ function sumThree() {
 
 }
 
-sumThree.curry(3)(4)(20)(6);
+console.log(sumThree.curry(3)(4)(20)(6));
 
 // or more briefly:
 console.log(sumThree(4, 20, 6));
 
 
 Function.prototype.curry = function (numArgs) {
-  
+
 };
