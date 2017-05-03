@@ -1,0 +1,47 @@
+.gear-dropdown {
+  position: absolute;
+  top: 29px;
+  background-color: white;
+  width: 240px;
+  right: 0px;
+  font-family: $sans-serif;
+  text-align: left;
+  border: 1px solid $light-gray;
+	border-radius: 3px;
+  z-index: 1;
+  box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
+  padding: 10px;
+}
+
+
+.editions li:hover {
+  background-color: $light-gray;
+}
+
+.gear-dropdown .editions  {
+	border-bottom: 1px solid $light-gray;
+  margin-bottom: 10px;
+}
+
+
+.dropdown-subtitle {
+  color: $dark-gray;
+  margin: 10px 0px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.help li {
+  color: $blue;
+}
+
+.help li:hover {
+  text-decoration: underline;
+}
+
+.editions li, .help li {
+  font-size: 12px;
+  padding: 5px 0px;
+  margin: 5px 0px;
+  cursor: pointer;
+}
