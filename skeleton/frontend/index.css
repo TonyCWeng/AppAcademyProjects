@@ -56,21 +56,30 @@ body {
   align-items: center;
 }
 
-.clock-widget {
+.widget {
   width: 500px;
   display: flex;
   flex-direction: column;
 }
 
-.clock {
+.big_box {
   display: flex;
   justify-content: space-between;
   border: 2px solid black;
   padding: 10px;
+}
+
+.clock {
   background-color: #D8FFBD;
 }
 
+.weather {
+  justify-content: center;
+  background-color: #FDE7FF;
+}
+
 h1 {
+  margin-top: 20px;
   text-align: center;
   font-size: 24px;
   font-weight: bold;

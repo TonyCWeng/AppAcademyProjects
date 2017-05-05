@@ -35,9 +35,9 @@ class Clock extends React.Component {
     const year = this.state.date.getFullYear();
 
     return (
-    <div className="clock-widget">
+    <div className="widget">
       <h1>CLOCK</h1><br/>
-      <div className="clock">
+      <div className="big_box clock">
         <div className="clock-headers">
           Time:<br/>
           Date:
