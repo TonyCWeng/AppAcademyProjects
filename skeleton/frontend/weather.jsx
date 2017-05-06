@@ -38,11 +38,14 @@ class Weather extends React.Component {
   render(){
     return (
       <div className="widget">
-        <h1>Weather</h1><br/>
+        <h1>WEATHER</h1><br/>
         <div className="weather big_box">
+          <div>
+          <img src="https://maxcdn.icons8.com/Share/icon/Weather//partly_cloudy_day_filled1600.png"
+          className="icon" alt="icon"/><br/></div>
+          <div>
           {this.state.city}<br/>
-        {this.state.temp}<br/>
-      // <img src="./icon.png" alt= "icon"/>
+          {this.state.temp} Degrees<br/></div>
         </div>
       </div>
     );
