@@ -79,6 +79,20 @@ body {
   align-items: center;
 }
 
+.auto {
+  background-color: #BFFFEE;
+  flex-direction: column;
+}
+
+.auto ul {
+  list-style: decimal;
+  margin-left: 30px;
+}
+
+.auto ul li {
+  margin: 5px 0;
+}
+
 h1 {
   margin-top: 20px;
   text-align: center;
