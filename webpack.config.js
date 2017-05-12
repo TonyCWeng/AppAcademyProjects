@@ -1,10 +1,11 @@
 var path = require('path');
 
 module.exports = {
-  entry: './frontend/entry.jsx',
+  context: __dirname,
+  entry: './frontend/bench_bnb.jsx',
   output: {
-    path: 'app/assets/javascripts',
-    filename: './bundle.js',
+    path: path.resolve(__dirname),
+    filename: './app/assets/javascripts/bundle.js',
   },
   module: {
     loaders: [
