@@ -18,3 +18,14 @@ export const login = user => dispatch => (
     dispatch(receiveCurrentUser(currentUser),
     errors => dispatch(receiveErrors(errors)))
 ));
+
+export const signup = user => dispatch => (
+  APIUtil.signup(user).then(currentUser =>
+    dispatch(receiveCurrentUser(currentUser),
+    errors => dispatch(receiveErrors(errors)))
+));
+
+export const logout = () => dispatch => (
+  APIUtil.logout().then(response =>
+    dispatch(receiveCurrentUser(null))
+));
